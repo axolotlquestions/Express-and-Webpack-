@@ -17,6 +17,7 @@ filmRouter.post('/', function(req, res){
   films.push(req.body.film);
   res.json({data: films});
 });
+// works
 
 // read
 filmRouter.get('/:id', function(req, res){
@@ -29,6 +30,7 @@ filmRouter.put('/:id', function(req, res){
   films[req.params.id] = req.body.film;
   res.json({data: films});
 });
+// works
 
 // delete
 filmRouter.delete('/:id', function(req, res){
